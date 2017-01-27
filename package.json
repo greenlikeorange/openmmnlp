@@ -1,13 +1,13 @@
 {
-  "name": "electron-quick-start",
-  "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "name": "openmmnlp",
+  "version": "0.1.0",
+  "description": "Open myanmar NLP",
   "main": "main.js",
   "scripts": {
     "postinstall": "bower install && node app/startup.js",
     "start": "electron ."
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "git@github.com:greenlikeorange/openmmnlp.git",
   "keywords": [
     "Electron",
     "quick",
