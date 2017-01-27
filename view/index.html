@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="components/bulma/css/bulma.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+  </head>
+  <body>
+    <div id="app" class="container">
+      <div class="columns">
+        <!-- <div class="column is-one">
+
+        </div> -->
+        <div class="column">
+          <p class="control">
+            <textarea class="textarea" v-model="analyize_sentence"></textarea>
+          </p>
+          <p class="control">
+            <label class="radio">
+              <input type="radio" name="gram" value="1" v-model="show_gram">
+              >= Uni gram
+            </label>
+            <label class="radio">
+              <input type="radio" name="gram" value="2" v-model="show_gram">
+              >= Bi gram
+            </label>
+            <label class="radio">
+              <input type="radio" name="gram" value="3" v-model="show_gram">
+              >= Tri gram
+            </label>
+            <label class="radio">
+              <input type="radio" name="gram" value="4" v-model="show_gram">
+              >= Quad gram
+            </label>
+            <label class="radio">
+              <input type="radio" name="gram" value="5" v-model="show_gram">
+              >= Pent gram
+            </label>
+            <label class="radio">
+              <input type="radio" name="gram" value="6" v-model="show_gram">
+              >= Hex gram
+            </label>
+            <label class="radio">
+              <input type="radio" name="gram" value="7" v-model="show_gram">
+              >= Oct gram
+            </label>
+          </p>
+          <center>
+            <p class="analyize_show" v-html="analyize()"></p>
+          </center>
+        </div>
+      </div>
+
+      <!-- <table id="ctmu" class="table">
+        <tbody>
+          <tr v-on:click="add_selected">Add selected</tr>
+        </tbody>
+      </table> -->
+    </div>
+
+  </body>
+
+  <script src="components/vue/dist/vue.min.js" charset="utf-8"></script>
+  <script>
+    // You can also require other files to run in this process
+    require('../app');
+  </script>
+</html>
